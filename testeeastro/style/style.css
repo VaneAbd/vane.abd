@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ================= RESET ================= */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur834.cur), auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('https://i.postimg.cc/3wVSkQft/3fd5a706-4ac2-454d-ab65-885f4be28681.jpg') no-repeat center fixed;
+  background-size: cover;
+  background-color: #f3e6f7;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ================= HEADER COM FOTO ================= */
+header{
+  width: 100dvw;
+  height: 100dvh;
+  background-image: url(https://i.postimg.cc/Jz2Qtq3N/54df6278-585e-4e43-b8e7-bf2df47de23b.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1,
+header h2,
+header p{
+  width: 40%;
+  margin-left: 50%;
+  font-weight: lighter;
+  font-size: 6.0rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header h1,
+header h2{
+  font-family: "Fleur De Leah", cursive;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+
+header p{
+  font-size: 1.5rem;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #faf5ffc5;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 0;
+  width: 100dvw;
+  z-index: 100;
+}
+
+nav a {
+  text-decoration: none;
+  color: #DA62CF;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #301c6e;
+  transform: translateY(-3px);
+  border-bottom: 2px dotted #634A85;
+  background: rgba(234, 212, 255, 0.9);
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+/* ================= TÍTULOS ================= */
+h2 {
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 2.4rem;
+  color: #634A85;
+  margin: 30px auto;
+  text-align: center;
+  display: table;
+  transition: border-color 0.8s;
+}
+
+h2:hover {
+  border-bottom: 2px dotted #ffb6da;
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.hero img {
+  max-width: 340px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+/* ================= CONTEÚDO ================= */
+.conteudo {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.conteudo img {
+  max-width: 30%;
+  height: auto;
+}
+
+.conteudo p {
+  flex: 1;
+}
+
+  /* ================= BOTÃO ESTILO NAV ================= */
+.btn-wrapper {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  width: 100%;             /* garante que ocupe todo o container */
+  margin-top: 5px;        /* espaçamento do conteúdo acima */
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #634A85;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border-bottom: 2px solid transparent;
+  background: rgba(234, 212, 255, 0.9); /* fundo lilás permanente */
+  transition: 0.7s;
+  text-align: center;
+  max-width: 100%;
+  width: 20%;
+  margin: auto;
+}
+
+.btn:hover {
+  color: #634A85;
+  transform: translateY(-3px);
+  border-bottom: 2px dotted #634A85; /* pontilhado só no hover */
+  box-shadow: 0 0 10px 4px rgba(186, 135, 255, 0.7); /* sombra lilás brilhante */
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card,
+.faq-item {
+  background: #f3e8ff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: center; /* centraliza o botão */
+}
+
+.card:hover,
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* ================= DEPOIMENTOS ================= */
+.depoimentos {
+  background: #faf5ff;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.depoimentos p {
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ================= SOBRE AUTORA ================= */
+.sobre-autora {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.sobre-autora img {
+  width: 280px;
+  border-radius: 12px;
+}
+
+/* ================= BOTÕES SOCIAIS ================= */
+.social-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-buttons a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #301c6e;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer {
+  background: rgba(234, 212, 255, 0.9); /* lilás suave */
+  color: #634A85; /* roxo escuro */
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Montserrat', sans-serif;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -4px 10px rgba(186, 135, 255, 0.3); /* sombra delicada */
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  font-family: 'Fleur De Leah', cursive;
+  font-size: 24px;
+  color: #DA62CF; /* lilás mais vibrante no título */
+}
+
+.footer p {
+  margin: auto;
+  margin-bottom: 15px;
+  max-width: 50%;
+  font-size: 14px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #634A85;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #DA62CF; /* muda para lilás vibrante no hover */
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #634A85;
+}
+.mobile-menu{
+  display: none;
+}
+.sobre-autora img{
+  box-shadow: 0 0 10px 4px rgba(186, 135, 255, 0.7); /* sombra lilás brilhante */
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  * {
+    cursor: auto !important;
+  }
+
+  header h1,
+  header p {
+    width: 100% !important;
+    margin-left: 0 !important;
+    font-size: 2.5rem !important;
+  }
+  nav{
+    position: fixed;
+    max-width: 100dvw;
+    max-height: 100dvh;
+    height: 100dvh;
+    flex-direction: column;
+    background-color: rgba(27, 0, 46, 0.733);
+    justify-content: center;
+    align-items: center;
+    left: 100%;
+    transition: all .5s ease-in-out;
+  }
+  .nav-over{
+    transition: all .5s ease-in-out;
+    left: 0%;
+  }
+
+  .hero,
+  .sobre-autora,
+  .conteudo {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .conteudo img {
+    max-width: 100%;
+  }
+
+  nav a:hover,
+  .card:hover,
+  .faq-item:hover,
+  h2:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+    background: none !important;
+  }
+  .mobile-menu{
+    display: flex;
+    position: fixed;
+    top: 3dvh;
+    left: 90dvw;
+    z-index: 1000;
+  }
+  .book{
+    font-size: 2rem;
+    color: #301c6e;
+  }
+  .book-color{
+    color: white
+  }
+  nav a:hover{
+    color: #ffffff;
+  }
+  .btn{
+    width: 50%;
+  }
+  header{
+    justify-content: end;
+  }
+  header p{
+    display: none;
+  }
+  header h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  header h2{
+    letter-spacing: 0.5;
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .footer-content p{
+    min-width: 100%;
+  }
+  .footer-copy{
+    padding-top: 50px;
+  }
+}
